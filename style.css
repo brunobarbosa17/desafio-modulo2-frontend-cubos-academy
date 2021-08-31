@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Manrope;
+}
+
+header {
+    background: #A785ED;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #FDFDFD;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+input {
+    border: 1px solid #979797;
+    border-radius: 8px;
+    width: 400px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    padding: 14px;
+    outline: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 41px;
+}
+
+.id {
+    display: none;
+}
+
+.movie__rating {
+    font-size: 12px;
+    color: #FBCD6E;
+}
+
+.movie__info {
+    position: relative;
+    bottom: 48px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FDFDFD;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.movie__title {
+    width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.estrela {
+    width: 13px!important;
+    height: 13px!important;
+    margin-right: 4px;
+}
+
+.movie {
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.movie img {
+    width: 168px;
+    height: 301px;
+}
+
+.highlight {
+    height: 500px;
+    display: flex;
+    margin-top: 16px;
+}
+
+.highlight__video {    
+    background-size: cover;
+    width: 553px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.play {
+    width: 25%;
+    z-index: 2;
+    justify-content: center;
+}
+
+.fundo__cinza {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.highlight__info {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    margin-left: 24px;
+    height: 350px;
+    width: auto;
+}
+
+.highlight__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #E183C8;
+    padding: 16px;
+}
+
+.highlight__rating {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: right;    
+    color: #A785ED;
+    padding: 16px;
+}
+
+.highlight__launch, .highlight__genres {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 16px;
+}
+
+.highlight__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0.8;
+    padding: 16px;
+    width: 328px;
+    height: 120px;
+}
+
+.highlight__title-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* MODAL */
+
+.modal.hidden {
+    display: none;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+.modal__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.modal__img {
+    width: 729px;
+    height: 413px;
+    margin-bottom: 21px;
+}
+
+.modal__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 200;    
+    color: #FFFFFF;
+    width: 729px;
+    height: 413px;
+}
+
+.modal__genre-average {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 729px;
+    margin-bottom: 50px;
+}
+
+.modal__average {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background: #A785ED;
+    border-radius: 8px;
+    padding: 11px;
+
+}
+
+.modal__genre {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-right: 12px;
+    background: #E183C8;
+    border-radius: 8px;
+    padding: 11px;
+}
+
+.modal__close {
+    position: relative;
+    left: 47%;
+    top: 3%;
+    cursor: pointer;
+}
+
+/* FIM MODAL */
+
+
+/*BOTOES DE PASSAR PÁGINA*/
+
+.movies-container {
+    display: flex;
+    margin-top: 41px;
+}
+
+.movies {
+    display: flex;
+    /* flex-wrap: wrap;
+    width: 936px; */
+}
+
+.btn-prev {
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.btn-next {
+    cursor: pointer;
+}
+
+/* FUNCAO DARK MODE */
+
+.btn-theme {
+    cursor: pointer;
+}
